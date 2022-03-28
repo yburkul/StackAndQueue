@@ -38,6 +38,14 @@ namespace LinkList
             Console.WriteLine("Value Poped is {0}", Head.data);
             Head = Head.next;
         }
+        public void RemoveBeginning()
+        {
+            if (Head == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            Head = Head.next;
+        }
         public void Display()
         {
             Node temp = Head;

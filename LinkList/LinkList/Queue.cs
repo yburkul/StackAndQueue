@@ -9,23 +9,23 @@ namespace LinkList
     public class Queue
     {
         LinkedList linklist;
-
         public Queue()
         {
             linklist = new LinkedList();
         }
-
         public void Enqueue(Node node)
         {
             linklist.AddNode(node);
         }
-
         public void DisplayQueue()
         {
             Console.WriteLine("Queue: ");
             linklist.Display();
         }
-
+        public void dequeue()
+        {
+            linklist.RemoveBeginning();
+        }
         public void Top()
         {
             var val = linklist.Head;

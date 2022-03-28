@@ -27,7 +27,10 @@ namespace LinkList
             queue.Enqueue(node_2);
             queue.Enqueue(node_3);
             queue.DisplayQueue();
-            queue.Top();
+            queue.Top();   
+
+            queue.dequeue();
+            queue.DisplayQueue();
         }
     }
 }
