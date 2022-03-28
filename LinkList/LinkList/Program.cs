@@ -21,6 +21,13 @@ namespace LinkList
             stack.Pop(node_2);
             stack.Pop(node_3);
             stack.DisplayStack();
+
+            Queue queue = new Queue();
+            queue.Enqueue(node_1);
+            queue.Enqueue(node_2);
+            queue.Enqueue(node_3);
+            queue.DisplayQueue();
+            queue.Top();
         }
     }
 }
