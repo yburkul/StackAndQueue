@@ -28,6 +28,16 @@ namespace LinkList
                 Head = node;
             }
         }
+        public void Remove()
+        {
+            if (Head == null)
+            {
+                Console.WriteLine("Stack is empty");
+
+            }
+            Console.WriteLine("Value Poped is {0}", Head.data);
+            Head = Head.next;
+        }
         public void Display()
         {
             Node temp = Head;

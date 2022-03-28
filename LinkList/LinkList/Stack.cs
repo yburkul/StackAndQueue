@@ -24,7 +24,12 @@ namespace LinkList
         public void Top()
         {
             var val = linkList.Head;
-            Console.WriteLine("Top" + val.data);
+            Console.WriteLine("\nTop" + val.data);
+        }
+        public void Pop(Node node)
+        {
+            Console.WriteLine("");
+            linkList.Remove();
         }
     }
 }

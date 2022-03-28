@@ -15,6 +15,12 @@ namespace LinkList
             stack.Push(node_2);
             stack.Push(node_3);
             stack.DisplayStack();
+            stack.Top();
+
+            stack.Pop(node_1);
+            stack.Pop(node_2);
+            stack.Pop(node_3);
+            stack.DisplayStack();
         }
     }
 }
